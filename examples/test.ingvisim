@@ -1,0 +1,56 @@
+{
+  print("labas, pasauli")		// kalboje esanti print funckija,
+                                // skirta teksto išvedimui į ekraną
+  x = 3
+  x = 4				            // kintamųjų reikšmių priskirimas
+  z = 11
+  print(z*x)				    // matematinė operacija
+
+  x = 10
+  print("paspausdinsiu x nuo 10 iki 2")
+  while{x > 1}{
+    print(x)
+    x = x - 1
+  }
+  print("baigesi ciklas")	    // while ciklas
+
+  fun sum(a, b){ 		        // funkcija
+    a + b
+  }
+
+  print("funkcija sum pabandau kviest sum(5,6)")
+  suma = sum(5, 6)
+
+  // if sąlyga
+  if{suma > 10} {print("daugiau")}
+
+  // du Fibonačio sekos variantai
+  fun loopedFibonacci(index){
+    if{index < 3}{
+      1
+    }else{
+      a1 = 1
+      a2 = 1
+      i = 3
+      while{i <= index}{
+        tmp = a1 + a2 + 0
+        a1 = a2 + 0
+        a2 = tmp + 0
+        i = i + 1
+      }
+      a2
+    }
+  }
+
+  fun fibonacci(n) {
+    if {n == 0 || n == 1} {n}
+    else
+    {fibonacci(n - 1) + fibonacci(n - 2)}
+  }
+
+  print("fibonacci:")
+  print(fibonacci(7))
+
+  print("fibonacci:")
+  print(loopedFibonacci(7))
+}

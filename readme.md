@@ -1,6 +1,8 @@
 # INGVISIM
 
-An OHM.js language
+An interpreter for the *ingvisim* programming language, based on the `ohm-js` library.
 
-## installing interpreter
-run `npm install . -g`. After that, run `ingvisim <file-name-to-run>` to run an Ingvisim source file.
+## Using the interpreter
+
+1. Install via npm: `npm i -g ingvisim`
+2. Currently, the interpreter only supports one command, that interpretes an ingvisim code file: `ingvisim <filename>`
