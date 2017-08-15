@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An OHM.js language",
   "preferGlobal": true,
-  "devDependencies": {
+  "dependencies": {
     "ohm-js": "0.13.1"
   },
   "bin": {
