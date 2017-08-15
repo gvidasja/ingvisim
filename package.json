@@ -1,0 +1,14 @@
+{
+  "name": "ingvisim",
+  "version": "1.0.0",
+  "description": "An OHM.js language",
+  "preferGlobal": true,
+  "devDependencies": {
+    "ohm-js": "0.13.1"
+  },
+  "bin": {
+    "ingvisim": "index.js"
+  },
+  "author": "ingvisim",
+  "license": "ISC"
+}

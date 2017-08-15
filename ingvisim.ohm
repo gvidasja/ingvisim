@@ -1,0 +1,27 @@
+Ingvisim {
+	Expression      = Assignment | AddExpression | Identifier | Number
+
+	AddExpression   = AddExpression "+" MultExpression -- plus
+	                | AddExpression "-" MultExpression -- minus
+	                | MultExpression
+
+    MultExpression  = MultExpression "*" PrimaryExpression -- multiply
+                    | MultExpression "/" PrimaryExpression -- divide
+                    | PrimaryExpression
+
+    PrimaryExpression = "(" Expression ")" -- paren
+                    | Identifier
+                    | Number
+
+    Assignment = Identifier "=" Expression
+    Identifier = letter (letter|digit)*
+
+    Number = bin | oct | hex | float | int
+	int    = digit+
+	float  = digit+ "." digit+
+	hex    = "0x" hexDigit+
+    oct    = "Oo" octDigit+
+    bin    = "0b" binDigit+
+	octDigit = "0".."7"
+	binDigit = "0".."1"
+}
